@@ -1,46 +1,31 @@
-# React Electron
+# Code Name
+## **Jarvis**   (`temporary`)
 
-*Easy-to-understand-and-use boilerplate code for creating an Electron desktop app simply using Reactjs. Includes React Router.*
-<br>
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), [Electron](https://electronjs.org/), and [electron-builder](https://github.com/electron-userland/electron-builder).
+# One-Line Description 
+> A digital assistant to make computers more fun 
 
-## Build Electron App With React - Video Tutorial
-[Video Tutorial at YouTube](https://www.youtube.com/playlist?list=PLASldBPN_pkCXhDdahLI2RIRy1tmGTeit)
+# Problem Statement 
+In our modern world today, computers have become indispensible. People still find it difficult to manipulate computers properly and usually face problems even at a basic level, especially when they didn't receive any prior computer training.
 
-## Usage
-1. Clone this repository.
-```
-git clone https://github.com/willjw3/react-electron.git <your-project-name>
-```
-2. If you havent already, install Yarn globally.
-```
-npm install -g yarn
-```
-3. Navigate into project root and install dependencies.
-```
-cd <your-project-name> && npm install
-```
-4. Run dev server.
-```
-npm run start
-```
-## Deploy to Desktop
-1. Run the build process
-```
-npm run build
-```
-2. Go into your project folder using your file explorer. Navigate to the `dist` folder and open it. Then double-click `<your-project-name>` Setup 0.1.0. Your app should open and there should now be an icon on your desktop for this app.
+# Solution 
+Jarvis seeks to bring a solution to this problem through an `intuitive interface` and a `comprehensive set of instructions` which make basic as well as complex instructions accessible to every one. Through a simplistic look we seek to provide a digital assistant which is appealing to novice and professional users and respond to their every command in a concise and timely manner.
 
-**Use a Custom Icon**
+### Features 
+ - An offline implementation for those with slow internet connectivity
+ - Modular implementation for better upgradability 
+ - Machine Learning 
+ - Artificial Intelligence
 
-Add a 256 x 256 .png or .ico image in your public folder. It should be either `icon.ico` or `icon.png`. Update the `icon` property in your `package.json` if necessary. Currently, it uses an image called `icon.png`, which is a graphic of a coffee cup. You'll only see this in production. For more info, see the [electron-builder documentation](https://www.electron.build/icons)
+# Innovations 
+Similar products do exist in the market, our product brings in the following innovations.
+1. Intuitive Interface
+2. Responsive Design
+3. Offline 
+4. Unobstrucive
+5. Simplistic Usage
 
-## Contribute
-Feel free to submit an issue or pull request anytime. If a change is made to the codebase with your PR, you'll be listed as a contributor.
-
-### Contributors
-@willjw3 | https://github.com/willjw3
-
-
-
-
+# Instructions Set
++ Launch Programs
++ Open/Search Files
++ System Commands
++ Browse Internet
