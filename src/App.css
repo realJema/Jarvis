@@ -40,3 +40,42 @@
   height: 200px;
   margin-top: 5%;
 }
+
+html, body, .App {
+  height: 100%;
+}
+body, .navbar, .App {
+  background-color:#eeeeee;
+}
+
+.navbar {
+  -webkit-app-region: drag;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: none;
+}
+.options {
+  width: 100%;
+    display: flex;
+    padding: 20px 30px;
+}
+.options>button {
+      border-radius: 23px;
+      margin-right: 10px;
+}
+
+.userInput {
+  width: 100%;
+  background-color: #e2e2e2;
+  color: black;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  padding: 10px 20px; 
+  border: none;
+}

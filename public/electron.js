@@ -5,11 +5,14 @@ const path = require("path");
 const isDev = require("electron-is-dev");
 let mainWindow;
 function createWindow() {
-    mainWindow = new BrowserWindow({ 
-        width: 1200, 
-        height: 800,
-        icon: ""
-    });
+    mainWindow = new BrowserWindow({
+		width: 900,
+		height: 450,
+		icon: '',
+
+		transparent: true,
+		frame: false,
+	});
      
 
     mainWindow.loadURL(
