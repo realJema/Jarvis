@@ -10,17 +10,21 @@ function App() {
 
 	// execute this when the user presses enter
 	function Inputpassed() {
-		console.log('user pressed enter');
-		console.log(input);
+		setContainer('<h4 className="input-displayed">' + input + '</h4>');
 		setInput(''); // clear user input
-		// setContainer("<h4 className=\"input-displayed\">" + input + "</h4>")
+	}
 
+	function googleSearch(query){
 		// regular javascript works too
-		var search = document.querySelector('.browser-window');
-		search.src = 'https://github.com/';
-		search.classList.toggle('hide-container');
+		// This is going to open the users request in a google search on webvieww
 		var display = document.querySelector('.main-container');
-		display.classList.toggle('hide-container');
+		var search = document.querySelector('.browser-window'); // gets webview  through class
+		search.src = 'https://google.com/search?q=' + query.replace(/ /g, '+');
+
+		setTimeout(() => {
+			display.classList.toggle('hide-container');
+			search.classList.toggle('hide-container'); // displays webview by removing the class which hides it
+		}, 2000);
 	}
 
 	const handleKeyDown = (event) => {
@@ -31,7 +35,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<nav className="navbar">
+			<nav className="navbar"> 
 				<div className="container-fluid">
 					<form className="d-flex">
 						<a className="navbar-brand">
@@ -58,7 +62,6 @@ function App() {
 				</div>
 			</nav>
 			<div className="main-container" dangerouslySetInnerHTML={{ __html: container }}></div>
-			<div className="footer">
 				<div className="options">
 					<button type="button" className="btn btn-outline-secondary">
 						Weather
@@ -70,13 +73,14 @@ function App() {
 						What can you do?
 					</button>
 				</div>
+			<div className="footer">
 				<input
 					className="userInput"
 					type="text"
 					placeholder="Ask me anything..."
 					onKeyDown={handleKeyDown}
 					value={input}
-					onInput={(e) => setInput(e.target.value)}
+					onChange={(e) => setInput(e.target.value)}
 				/>
 			</div>
 		</div>
