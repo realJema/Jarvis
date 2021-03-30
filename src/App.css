@@ -50,6 +50,8 @@ body, .navbar, .App {
 
 .navbar {
   -webkit-app-region: drag;
+  position: fixed;
+    width: 100%;
 }
 
 .footer {
@@ -86,4 +88,7 @@ body, .navbar, .App {
 .main-container>h4 {
   text-align: left !important;
   padding: 0 5%;
+}
+.hide-container{
+  display: none;
 }

@@ -2,19 +2,25 @@ import React from 'react';
 import { useState } from 'react';
 
 // Bootstrap css
-import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import { Gear, X, BoxArrowDownLeft, BoxArrowUpRight, ChevronLeft, ChevronRight, XSquare } from 'react-bootstrap-icons';
 
 function App() {
 	const [input, setInput] = useState('');
-	const [container, setContainer] = useState('<h2>Jema</h2><h3>Hi! How can I help?</h3>')
+	const [container, setContainer] = useState('<h2>Jema</h2><h3>Hi! How can I help?</h3>');
 
 	// execute this when the user presses enter
 	function Inputpassed() {
-		console.log("user pressed enter");
+		console.log('user pressed enter');
 		console.log(input);
-		setInput(""); // clear user input 
-		setContainer("<h4 className=\"input-displayed\">" + input + "</h4>")
+		setInput(''); // clear user input
+		// setContainer("<h4 className=\"input-displayed\">" + input + "</h4>")
+
+		// regular javascript works too
+		var search = document.querySelector('.browser-window');
+		search.src = 'https://github.com/';
+		search.classList.toggle('hide-container');
+		var display = document.querySelector('.main-container');
+		display.classList.toggle('hide-container');
 	}
 
 	const handleKeyDown = (event) => {
@@ -45,14 +51,13 @@ function App() {
 						<a className="navbar-brand">
 							<BoxArrowDownLeft />
 						</a>
-						<a className="navbar-brand">
+						<a className="navbar-brand" style={{ marginRight: '0' }}>
 							<XSquare />
 						</a>
 					</form>
 				</div>
 			</nav>
-			<div className="main-container" dangerouslySetInnerHTML={{__html: container}} >
-			</div>
+			<div className="main-container" dangerouslySetInnerHTML={{ __html: container }}></div>
 			<div className="footer">
 				<div className="options">
 					<button type="button" className="btn btn-outline-secondary">
