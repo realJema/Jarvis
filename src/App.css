@@ -79,3 +79,11 @@ body, .navbar, .App {
   padding: 10px 20px; 
   border: none;
 }
+
+.main-container {
+  padding: 5%;
+}
+.main-container>h4 {
+  text-align: left !important;
+  padding: 0 5%;
+}

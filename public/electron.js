@@ -9,7 +9,7 @@ function createWindow() {
 		width: 900,
 		height: 450,
 		icon: '',
-
+        resizable: true,
 		transparent: true,
 		frame: false,
 	});
